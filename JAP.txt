@@ -1,0 +1,25 @@
+# 001 JPA (Java Persistence API)
+JPA 이란?
+  JAP 이란 Java Persistence API 의 약자로 자바의 ORM(Object Relational Mapping) 표준 스펙을 정의
+  JAP 의 스펙은 자바의 객체와 데이터베이스를 어떻게 매핑 하고 동작해야 하는지를 정의 하고 있음.
+
+하이퍼네이트(Hibernate)
+  ORM Framework 중 하나
+  JPA 프로바이더 라고도 부름
+  JPA 의 실제 구현체 중 하나이며, 현재 JPA 구현체 중 가장 많이 사용 됨.
+
+영속성 컨텍스트(Persistence Context)
+  영속성 컨텍스트(Persistence Context)는 JPA 가 관리하는 엔티티 객체의 집합
+  엔티티 객체가 영속 컨텍스트에 들어오게 되면 JPA 는 엔티티 객체의 매핑 정보를 가지고 DB 에 반영 함
+  엔티티 객체가 영속 컨텍스트에 들어오게 되어 관리 대상이 되면 그 객체를 영속 객체라고 부름
+
+  연속성 컨텍스트는 세션 단위로 생명주기를 갖고 있음(세션이 생기면서 만들어지고, 세션이 종료되면 없어짐.)
+  접근하기 위해서 Entity Manager 를 사용함
+
+엔티티(Entity) 클래스
+  JAP 어노테이션을 활용하여 엔티티 클래스를 정의
+  주요 어노테이션은 아래와 같음
+    @Entity : 해당 클래스가 JAP 엔티티 클래스라고 정의
+    @Table : 해당 클래스가 데이터베이스의 어느 테이블에 매핑 되는지 정의
+    @Id : DB 테이블의 Primary Key 컬럼과 매핑
+    @Column : 매핑할 데이터 베이스의 컬럼 이름과 필드 변수의 이름이 다를 경우 매핑하기 위해 사용
