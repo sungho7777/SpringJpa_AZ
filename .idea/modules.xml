@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/SpringJpa_AZ.iml" filepath="$PROJECT_DIR$/.idea/SpringJpa_AZ.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BasicJpa/basicjpa.iml" filepath="$PROJECT_DIR$/BasicJpa/basicjpa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/entityManagerFactory/entitymanagerfactory.iml" filepath="$PROJECT_DIR$/entityManagerFactory/entitymanagerfactory.iml" />
+    </modules>
+  </component>
+</project>
